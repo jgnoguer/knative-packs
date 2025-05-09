@@ -16,10 +16,10 @@ uri = "../../buildpacks/go"
 
 [[targets]]
 
-  [[target.amd]]
+  [[target.group]]
     os="linux"
     arch="amd64"
-  [[target.arm]]
+  [[target.group]]
     os="linux"
     arch="amrm64"
 

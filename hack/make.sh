@@ -3,7 +3,8 @@
 set -euo pipefail
 set -o xtrace
 
-VERSION="${2-tip}"
+#VERSION="${2-tip}"
+VERSION="0.0.7"
 REPOSITORY="ghcr.io/jgnoguer"
 PACK_CMD=${PACK_CMD:-pack}
 

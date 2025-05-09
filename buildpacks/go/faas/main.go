@@ -76,9 +76,9 @@ func run() error {
 		router.Handle("/", eventHandler)
 	} else {
 		if *verbose {
-			fmt.Printf("Initializing HTTP function\n")
+			fmt.Printf("UOC Initializing HTTP function\n")
 		}
-		router.Handle("/", httpHandler)
+		router.Handle("/*", httpHandler)
 	}
 
 	httpServer := &http.Server{

@@ -14,6 +14,15 @@ uri = "../../buildpacks/go"
     id = "dev.knative-extensions.go"
     version = "0.0.7"
 
+[[targets]]
+
+  [[target.amd]]
+    os="linux"
+    arch="amd64"
+  [[target.arm]]
+    os="linux"
+    arch="amrm64"
+
 [stack]
   id = "io.buildpacks.stacks.jammy.tiny"
   build-image = "index.docker.io/paketobuildpacks/build-jammy-tiny:0.1.70"

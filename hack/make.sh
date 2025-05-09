@@ -20,13 +20,13 @@ make_buildpacks() {
     $PACK_CMD buildpack package "$(buildpack_to_img "${BUILDPACK}" "${VERSION}")" \
     --pull-policy if-not-present \
     --path "${BP_PATH}" \
-    --target "linux/amd64" --target "linux/arm64"
+    --target linux/arm64 --target linux/amd64
   done
 }
 
 make_builders() {
   for BUILDER in "${BUILDERS[@]}"; do
-    $PACK_CMD builder create "$(builder_to_img "${BUILDER}" "${VERSION}")" --config "./builders/${BUILDER}/builder.toml --target "linux/amd64" --target "linux/arm64"
+    $PACK_CMD builder create "$(builder_to_img "${BUILDER}" "${VERSION}")" --config "./builders/${BUILDER}/builder.toml" --target linux/arm64 --target linux/amd64
   done
 }
 

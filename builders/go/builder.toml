@@ -14,14 +14,6 @@ uri = "../../buildpacks/go"
     id = "dev.knative-extensions.go"
     version = "0.0.7"
 
-[[targets]]
-
-  [[target.group]]
-    os="linux"
-    arch="amd64"
-  [[target.group]]
-    os="linux"
-    arch="amrm64"
 
 [stack]
   id = "io.buildpacks.stacks.jammy.tiny"

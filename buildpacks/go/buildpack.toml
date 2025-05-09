@@ -19,4 +19,4 @@ id = "io.buildpacks.stacks.jammy.tiny"
 
 [[targets]]
 os = "linux"
-arch = "arm64"
+arch = "amd64"

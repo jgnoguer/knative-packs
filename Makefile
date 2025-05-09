@@ -1,7 +1,8 @@
 PACK_CMD?=pack
 
 GIT_TAG := $(shell git tag --points-at HEAD)
-VERSION_TAG := $(shell [ -z $(GIT_TAG) ] && echo 'tip' || echo $(GIT_TAG) )
+#VERSION_TAG := $(shell [ -z $(GIT_TAG) ] && echo 'tip' || echo $(GIT_TAG) )
+VERSION_TAG := 0.0.7
 
 .PHONY: builders buildpacks publish test
 

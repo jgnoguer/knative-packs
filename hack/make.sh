@@ -19,8 +19,7 @@ make_buildpacks() {
     $PACK_CMD buildpack package "$(buildpack_to_img "${BUILDPACK}" "${VERSION}")" \
     --pull-policy if-not-present \
     --path "${BP_PATH}" \
-    --target linux/arm64 \
-    --target linux/amd64
+    --target linux/arm64
   done
 }
 
